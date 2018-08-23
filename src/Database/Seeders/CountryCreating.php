@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\Countries\Database\Seeders;
+namespace Lwwcas\LaravelCountries\Database\Seeders;
 
-use Modules\Countries\Models\Country;
-use Modules\Countries\Models\CountryRegion;
+use Lwwcas\LaravelCountries\Models\Country;
+use Lwwcas\LaravelCountries\Models\CountryRegion;
 
 class CountryCreating
 {

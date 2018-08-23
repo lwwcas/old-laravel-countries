@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Countries\Models;
+namespace Lwwcas\LaravelCountries\Models;
 
 use Dimsav\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;

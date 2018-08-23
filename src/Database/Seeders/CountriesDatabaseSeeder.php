@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\Countries\Database\Seeders;
+namespace Lwwcas\LaravelCountries\Database\Seeders;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
-use Modules\Countries\Database\Seeders\BaseCountriesRegionsSeeder;
-use Modules\Countries\Database\Seeders\BaseCountriesSeeder;
+use Lwwcas\LaravelCountries\Database\Seeders\BaseCountriesRegionsSeeder;
+use Lwwcas\LaravelCountries\Database\Seeders\BaseCountriesSeeder;
 
 
 class CountriesDatabaseSeeder extends Seeder

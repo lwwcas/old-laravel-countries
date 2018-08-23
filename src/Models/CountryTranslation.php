@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Countries\Models;
+namespace Lwwcas\LaravelCountries\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

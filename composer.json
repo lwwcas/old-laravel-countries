@@ -23,10 +23,9 @@
     "type": "library",
     "license": "MIT",
     "autoload": {
-        "psr-4": {
+        "psr-0": {
             "Lwwcas\\LaravelCountries\\": "src/"
-        },
-        "files": {}
+        }
     },
     "extra": {
         "laravel": {
