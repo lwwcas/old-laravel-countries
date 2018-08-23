@@ -32,7 +32,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Lwwcas\\Laravel-countries\\Providers\\HelpServiceProvider"
+                "Lwwcas\\Laravel-countries\\Providers\\CountriesServiceProvider"
             ],
             "aliases": {}
         }
