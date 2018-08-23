@@ -24,14 +24,14 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Lwwcas\\laravel-countries\\": "src/"
+            "Lwwcas\\Laravel-Countries\\": "src/"
         },
         "files": {}
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Lwwcas\\laravel-countries\\Providers\\CountriesServiceProvider"
+                "Lwwcas\\Laravel-Countries\\Providers\\CountriesServiceProvider"
             ],
             "aliases": {}
         }
