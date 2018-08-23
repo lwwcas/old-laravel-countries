@@ -10,10 +10,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Countries\\Providers\\CountriesServiceProvider"
+                "Lwwcas\\laravel-countries\\Providers\\CountriesServiceProvider"
             ],
             "aliases": {
-                
+
             }
         }
     },
