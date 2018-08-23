@@ -1,0 +1,15 @@
+{
+    "name": "Countries",
+    "alias": "countries",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Lwwcas\\Laravel-countries\\Providers\\CountriesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+    ],
+    "requires": []
+}
