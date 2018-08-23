@@ -6,7 +6,7 @@
     "active": 1,
     "order": 0,
     "providers": [
-        "Lwwcas\\Laravel-Countries\\Providers\\CountriesServiceProvider"
+        "Lwwcas\\Countries\\Providers\\CountriesServiceProvider"
     ],
     "aliases": {},
     "files": [
