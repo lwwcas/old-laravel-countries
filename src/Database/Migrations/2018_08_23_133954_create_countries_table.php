@@ -20,6 +20,7 @@ class CreateCountriesTable extends Migration
             $table->string('iso');
             $table->timestamps();
 
+            $table->unique(['country_region_id','iso']);
             $table->foreign('country_region_id')->references('id')->on('countries_regions')->onDelete('cascade');
         });
 

@@ -17,22 +17,20 @@
         "5.7"
     ],
     "require": {
-        "mcamara/laravel-localization": "^1.3"
+        "dimsav/laravel-translatable": "^9.1"
     },
-    "homepage": "https://github.com/lwwcas/help",
+    "homepage": "https://github.com/lwwcas/laravel-countries",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Lwwcas\\Laravel-countries\\": "src/"
-        },
-        "files": {
+            "Lwwcas\\LaravelCountries\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Lwwcas\\Laravel-countries\\Providers\\HelpServiceProvider"
+                "Lwwcas\\LaravelCountries\\Providers\\CountriesServiceProvider"
             ],
             "aliases": {}
         }
