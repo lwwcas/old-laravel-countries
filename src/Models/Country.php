@@ -47,5 +47,15 @@ class Country extends Model
         return $query->whereTranslation('slug', $slug)->withTranslation();
     }
 
+    /**
+     * Find a country by slug.
+     *
+     * @param  string  $slug
+     * @return Illuminate\Database\Eloquent\Collection
+     */
+    public function scopeWhereIso($query, $iso, $country_region_id){
+        return $query->where('country_region_id', $country_region_id)->where('iso', $iso)->withTranslation();
+    }
+
 }
 
