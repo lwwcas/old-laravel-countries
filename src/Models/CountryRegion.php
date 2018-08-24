@@ -41,6 +41,16 @@ class CountryRegion extends Model
     }
 
     /**
+     * Find a region by name.
+     *
+     * @param  string  $name
+     * @return Illuminate\Database\Eloquent\Collection
+     */
+    public function scopeWhereName($query, $name){
+        return $query->whereTranslation('name', $name)->withTranslation();
+    }
+
+    /**
      * Find a region by uuid.
      *
      * @param  string  $uuid

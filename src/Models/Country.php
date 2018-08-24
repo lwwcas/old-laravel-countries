@@ -48,6 +48,16 @@ class Country extends Model
     }
 
     /**
+     * Find a country by name.
+     *
+     * @param  string  $name
+     * @return Illuminate\Database\Eloquent\Collection
+     */
+    public function scopeWhereName($query, $name){
+        return $query->whereTranslation('name', $name)->withTranslation();
+    }
+
+    /**
      * Find a country by iso.
      *
      * @param  string  $iso
