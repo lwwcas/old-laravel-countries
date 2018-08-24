@@ -58,5 +58,15 @@ class Country extends Model
         return $query->where('country_region_id', $country_region_id)->where('iso', $iso)->withTranslation();
     }
 
+    /**
+     * Find a country by uuid.
+     *
+     * @param  string  $uuid
+     * @return Illuminate\Database\Eloquent\Collection
+     */
+    public function scopeWhereUuid($query, $uuid){
+        return $query->where('uuid', $uuid)->withTranslation();
+    }
+
 }
 

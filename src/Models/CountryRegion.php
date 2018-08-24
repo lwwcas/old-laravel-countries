@@ -39,4 +39,14 @@ class CountryRegion extends Model
     public function scopeWhereSlug($query, $slug){
         return $query->whereTranslation('slug', $slug)->withTranslation();
     }
+
+    /**
+     * Find a region by uuid.
+     *
+     * @param  string  $uuid
+     * @return Illuminate\Database\Eloquent\Collection
+     */
+    public function scopeWhereUuid($query, $uuid){
+        return $query->where('uuid', $uuid)->withTranslation();
+    }
 }
