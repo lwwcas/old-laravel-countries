@@ -48,9 +48,10 @@ class Country extends Model
     }
 
     /**
-     * Find a country by slug.
+     * Find a country by iso.
      *
-     * @param  string  $slug
+     * @param  string  $iso
+     * @param  integer  $country_region_id
      * @return Illuminate\Database\Eloquent\Collection
      */
     public function scopeWhereIso($query, $iso, $country_region_id){
