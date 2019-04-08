@@ -14,5 +14,4 @@ class CountryRegionTranslation extends Model
         'slug',
         'name',
     ];
-
 }
