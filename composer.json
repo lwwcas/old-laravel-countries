@@ -1,20 +1,20 @@
 {
     "name": "lwwcas/laravel-countries",
-    "description": "A list of all countries, optimized for Laravel 5.7",
+    "description": "A list of all countries, optimized for Laravel 5.8",
     "authors": [{
         "name": "Lucas Duarte Oliveira",
         "email": "lucasduarte.job@gmail.com",
-        "homepage": "http://www.lucasduarte.info",
+        "homepage": "http://www.lucasduarte.pt",
         "role": "Developer"
     }],
     "keywords": [
         "lwwcas",
-        "Lucas",
-        "Duarte",
+        "Lucas Duarte",
         "laravel",
         "countries",
         "5.6",
-        "5.7"
+        "5.7",
+        "5.8"
     ],
     "require": {
         "dimsav/laravel-translatable": "^9.1"
