@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateCountriesRegionsTable extends Migration
 {
@@ -19,15 +19,14 @@ class CreateCountriesRegionsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('countries_regions_translations', function(Blueprint $table)
-        {
+        Schema::create('countries_regions_translations', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('country_region_id')->unsigned();
             $table->string('name');
             $table->string('slug')->unique();
             $table->string('locale')->index();
 
-            $table->unique(['country_region_id','locale']);
+            $table->unique(['country_region_id', 'locale']);
             $table->foreign('country_region_id')->references('id')->on('countries_regions')->onDelete('cascade');
         });
     }

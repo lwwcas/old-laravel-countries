@@ -5,7 +5,6 @@ namespace Lwwcas\LaravelCountries\Models;
 use Dimsav\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use Modules\Company\Entities\Company;
 
 class Country extends Model
 {
@@ -40,43 +39,49 @@ class Country extends Model
     /**
      * Find a country by slug.
      *
-     * @param  string  $slug
+     * @param string $slug
+     *
      * @return Illuminate\Database\Eloquent\Collection
      */
-    public function scopeWhereSlug($query, $slug){
+    public function scopeWhereSlug($query, $slug)
+    {
         return $query->whereTranslation('slug', $slug)->withTranslation();
     }
 
     /**
      * Find a country by name.
      *
-     * @param  string  $name
+     * @param string $name
+     *
      * @return Illuminate\Database\Eloquent\Collection
      */
-    public function scopeWhereName($query, $name){
+    public function scopeWhereName($query, $name)
+    {
         return $query->whereTranslation('name', $name)->withTranslation();
     }
 
     /**
      * Find a country by iso.
      *
-     * @param  string  $iso
-     * @param  integer  $country_region_id
+     * @param string $iso
+     * @param int    $country_region_id
+     *
      * @return Illuminate\Database\Eloquent\Collection
      */
-    public function scopeWhereIso($query, $iso, $country_region_id){
+    public function scopeWhereIso($query, $iso, $country_region_id)
+    {
         return $query->where('country_region_id', $country_region_id)->where('iso', $iso)->withTranslation();
     }
 
     /**
      * Find a country by uuid.
      *
-     * @param  string  $uuid
+     * @param string $uuid
+     *
      * @return Illuminate\Database\Eloquent\Collection
      */
-    public function scopeWhereUuid($query, $uuid){
+    public function scopeWhereUuid($query, $uuid)
+    {
         return $query->where('uuid', $uuid)->withTranslation();
     }
-
 }
-
