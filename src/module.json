@@ -1,15 +1,8 @@
 {
     "name": "Countries",
     "alias": "countries",
-    "description": "",
-    "keywords": [],
-    "active": 1,
-    "order": 0,
+    "description": "A list of all countries, optimized for Laravel 5.8",
     "providers": [
         "Lwwcas\\LaravelCountries\\Providers\\CountriesServiceProvider"
-    ],
-    "aliases": {},
-    "files": [
-    ],
-    "requires": []
+    ]
 }
