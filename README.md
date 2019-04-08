@@ -1,5 +1,6 @@
-## Requirements
+![Packagist Version](https://img.shields.io/packagist/v/lwwcas/laravel-countries.svg) ![Open Issues](https://img.shields.io/github/issues-raw/lwwcas/laravel-countries.svg) ![License](https://img.shields.io/github/license/lwwcas/laravel-countries.svg) ![Analysis by StyleCI](https://github.styleci.io/repos/145844689/shield)
 
+## Requirements
 - Laravel >= 5.5
 - PHP >= 7
 - [dimsav/laravel-translatable](https://github.com/dimsav/laravel-translatable)
@@ -20,7 +21,7 @@ composer dump-autoload
 ```bash
 $this->call(CountriesDatabaseSeeder::class);
 ```
-  
+
 - Import class CountriesDatabaseSeeder
 ```bash
 use Lwwcas\LaravelCountries\Database\Seeders\CountriesDatabaseSeeder;

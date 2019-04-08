@@ -5,7 +5,6 @@ namespace Lwwcas\LaravelCountries\Models;
 use Dimsav\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use Modules\Company\Entities\Company;
 
 class CountryRegion extends Model
 {
@@ -33,30 +32,36 @@ class CountryRegion extends Model
     /**
      * Find a region by slug.
      *
-     * @param  string  $slug
+     * @param string $slug
+     *
      * @return Illuminate\Database\Eloquent\Collection
      */
-    public function scopeWhereSlug($query, $slug){
+    public function scopeWhereSlug($query, $slug)
+    {
         return $query->whereTranslation('slug', $slug)->withTranslation();
     }
 
     /**
      * Find a region by name.
      *
-     * @param  string  $name
+     * @param string $name
+     *
      * @return Illuminate\Database\Eloquent\Collection
      */
-    public function scopeWhereName($query, $name){
+    public function scopeWhereName($query, $name)
+    {
         return $query->whereTranslation('name', $name)->withTranslation();
     }
 
     /**
      * Find a region by uuid.
      *
-     * @param  string  $uuid
+     * @param string $uuid
+     *
      * @return Illuminate\Database\Eloquent\Collection
      */
-    public function scopeWhereUuid($query, $uuid){
+    public function scopeWhereUuid($query, $uuid)
+    {
         return $query->where('uuid', $uuid)->withTranslation();
     }
 }
