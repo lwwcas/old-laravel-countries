@@ -10,6 +10,8 @@ class Country extends Model
 {
     use Translatable;
 
+    public $translationModel = 'Lwwcas\LaravelCountries\Models\CountryTranslation';
+
     protected $table = 'countries';
 
     public $translatedAttributes = [
