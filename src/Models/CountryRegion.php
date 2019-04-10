@@ -12,6 +12,11 @@ class CountryRegion extends Model
 
     public $translationModel = 'Lwwcas\LaravelCountries\Models\CountryRegionTranslation';
 
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
     protected $table = 'countries_regions';
 
     public $translatedAttributes = [
