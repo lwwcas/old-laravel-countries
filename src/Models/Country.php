@@ -12,6 +12,11 @@ class Country extends Model
 
     public $translationModel = 'Lwwcas\LaravelCountries\Models\CountryTranslation';
 
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
     protected $table = 'countries';
 
     public $translatedAttributes = [
@@ -19,10 +24,34 @@ class Country extends Model
         'name',
     ];
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
         'uuid',
-        'iso-a2',
-        'iso-a3',
+        'iso',
+        'visible',
+        'country_region_id',
+    ];
+
+    /**
+     * The model's default values for attributes.
+     *
+     * @var array
+     */
+    protected $attributes = [
+        'visible' => true,
+    ];
+
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'visible' => 'boolean',
     ];
 
     /**

@@ -18,6 +18,7 @@ class CreateCountriesTable extends Migration
             $table->uuid('uuid')->unique();
             $table->integer('country_region_id')->unsigned();
             $table->string('iso');
+            $table->boolean('visible')->default(true);
             $table->timestamps();
 
             $table->unique(['country_region_id', 'iso']);
