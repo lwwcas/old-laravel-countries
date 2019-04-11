@@ -33,6 +33,7 @@ class Country extends Model
         'uuid',
         'iso',
         'visible',
+        'country_region_id',
     ];
 
     /**
