@@ -24,6 +24,11 @@ class Country extends Model
         'name',
     ];
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
         'uuid',
         'iso',
