@@ -13,8 +13,18 @@ class CountryTranslation extends Model
      */
     public $timestamps = false;
 
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
     protected $table = 'country_translations';
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
         'slug',
         'name',
