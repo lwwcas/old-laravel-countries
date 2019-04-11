@@ -26,8 +26,26 @@ class Country extends Model
 
     protected $fillable = [
         'uuid',
-        'iso-a2',
-        'iso-a3',
+        'iso',
+        'visible',
+    ];
+
+    /**
+     * The model's default values for attributes.
+     *
+     * @var array
+     */
+    protected $attributes = [
+        'visible' => true,
+    ];
+
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'visible' => 'boolean',
     ];
 
     /**
