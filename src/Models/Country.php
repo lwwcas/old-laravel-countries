@@ -68,7 +68,8 @@ class Country extends Model
     }
 
     /**
-     * Get all countries with translations in a optimized query
+     * Get all countries with translations
+     * in a optimized query
      *
      * @return Illuminate\Database\Eloquent\Collection
      */
