@@ -68,6 +68,17 @@ class Country extends Model
     }
 
     /**
+     * Get all countries with translations
+     * in a optimized query
+     *
+     * @return Illuminate\Database\Eloquent\Collection
+     */
+    public static function _all()
+    {
+        return self::withTranslation()->get();
+    }
+
+    /**
      * Find a country by slug.
      *
      * @param string $slug

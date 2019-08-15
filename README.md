@@ -47,3 +47,5 @@ php artisan migrate --seed
 ## Licence
 
 MIT
+
+

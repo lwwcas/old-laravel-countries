@@ -17,7 +17,7 @@
         "5.8"
     ],
     "require": {
-        "dimsav/laravel-translatable": "^9.1"
+        "astrotomic/laravel-translatable": "^11.3"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.4"

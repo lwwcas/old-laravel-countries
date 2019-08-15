@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class CountryRegionTranslation extends Model
 {
-
     /**
      * Indicates if the model should be timestamped.
      *

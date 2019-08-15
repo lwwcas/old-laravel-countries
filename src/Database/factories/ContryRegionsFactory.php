@@ -19,8 +19,8 @@ $factory->define(CountryRegion::class, function (Faker $faker) {
     return [
         'uuid' => (string) Str::uuid(),
         'en'   => [
-            'slug' => Str::slug($regions[$rand], '-') . '-' . (string) Str::uuid(),
-            'name' => $regions[$rand] . '-' . 'factory',
+            'slug' => Str::slug($regions[$rand], '-').'-'.(string) Str::uuid(),
+            'name' => $regions[$rand].'-'.'factory',
         ],
     ];
 });
