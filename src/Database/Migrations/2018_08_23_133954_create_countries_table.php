@@ -17,11 +17,14 @@ class CreateCountriesTable extends Migration
             $table->increments('id');
             $table->uuid('uuid')->unique();
             $table->integer('country_region_id')->unsigned();
-            $table->string('iso');
+            $table->string('iso_alpha_2', 3);
+            $table->string('iso_alpha_3', 4);
+            $table->smallInteger('numeric');
+            $table->string('international-phone', 12);
             $table->boolean('visible')->default(true);
             $table->timestamps();
 
-            $table->unique(['country_region_id', 'iso']);
+            $table->unique(['country_region_id', 'iso_alpha_2']);
             $table->foreign('country_region_id')->references('id')->on('countries_regions')->onDelete('cascade');
         });
 
