@@ -2,7 +2,7 @@
 
 namespace Lwwcas\LaravelCountries\Models;
 
-use Dimsav\Translatable\Translatable;
+use Astrotomic\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
