@@ -31,7 +31,10 @@ class Country extends Model
      */
     protected $fillable = [
         'uuid',
-        'iso',
+        'iso_alpha_2',
+        'iso_alpha_3',
+        'numeric',
+        'international-phone',
         'visible',
         'country_region_id',
     ];
