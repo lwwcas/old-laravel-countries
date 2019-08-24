@@ -7,9 +7,11 @@ use Lwwcas\LaravelCountries\Models\CountryRegion;
 
 class CountryBuilder
 {
-    public static function create(String $region_slug, Array $countries)
+    public static function create(Array $countries, String $region_slug, String $lang) :Void
     {
 
+
+        return;
     }
 
     public static function createRegion(Array $regions, String $lang): Void
