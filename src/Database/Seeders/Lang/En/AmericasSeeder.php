@@ -3,7 +3,6 @@
 namespace Lwwcas\LaravelCountries\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Lwwcas\LaravelCountries\Models\CountryRegion;
 
 class AmericasSeeder extends Seeder
 {
