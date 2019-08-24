@@ -4,6 +4,7 @@ namespace Lwwcas\LaravelCountries\Database\Seeders\Lang\En;
 
 use Illuminate\Database\Seeder;
 use Lwwcas\LaravelCountries\Database\Seeders\Lang\En\AfricaSeeder;
+use Lwwcas\LaravelCountries\Models\CountryBuilder;
 
 class EnSeeder extends Seeder
 {
@@ -22,6 +23,8 @@ class EnSeeder extends Seeder
             'Europe',
             'Oceania',
         ];
+
+        CountryBuilder::createRegion($regions, 'en');
 
         $this->call(AfricaSeeder::class);
         $this->call(AmericasSeeder::class);
