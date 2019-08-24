@@ -8,6 +8,13 @@ class AfricaSeeder extends Seeder
 {
 
     /**
+     * Attribute that defines the language of countries
+     *
+     * @var string
+     */
+    protected $lang = 'en';
+
+    /**
      * Attribute that defines the continent of countries
      *
      * @var string
@@ -422,6 +429,8 @@ class AfricaSeeder extends Seeder
                 'international_phone' => '263',
             ],
         ];
+
+
 
     }
 }
