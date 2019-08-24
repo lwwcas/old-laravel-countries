@@ -3,6 +3,7 @@
 namespace Lwwcas\LaravelCountries\Database\Seeders\Lang\En;
 
 use Illuminate\Database\Seeder;
+use Lwwcas\LaravelCountries\Models\CountryBuilder;
 
 class AsiaSeeder extends Seeder
 {
@@ -402,6 +403,6 @@ class AsiaSeeder extends Seeder
             ],
         ];
 
-
+        CountryBuilder::create($countries, $this->region, $this->lang);
     }
 }

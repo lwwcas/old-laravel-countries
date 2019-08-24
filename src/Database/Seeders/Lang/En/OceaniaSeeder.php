@@ -3,6 +3,7 @@
 namespace Lwwcas\LaravelCountries\Database\Seeders\Lang\En;
 
 use Illuminate\Database\Seeder;
+use Lwwcas\LaravelCountries\Models\CountryBuilder;
 
 class OceaniaSeeder extends Seeder
 {
@@ -261,6 +262,8 @@ class OceaniaSeeder extends Seeder
                 'international_phone' => '681',
             ],
         ];
+
+        CountryBuilder::create($countries, $this->region, $this->lang);
 
     }
 }

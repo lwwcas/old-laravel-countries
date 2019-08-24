@@ -3,6 +3,7 @@
 namespace Lwwcas\LaravelCountries\Database\Seeders\Lang\En;
 
 use Illuminate\Database\Seeder;
+use Lwwcas\LaravelCountries\Models\CountryBuilder;
 
 class AmericasSeeder extends Seeder
 {
@@ -19,7 +20,7 @@ class AmericasSeeder extends Seeder
      *
      * @var string
      */
-    protected $region = 'america';
+    protected $region = 'americas';
 
     /**
      * Run the database seeds.
@@ -359,18 +360,11 @@ class AmericasSeeder extends Seeder
                 'international_phone' => '1-868',
             ],
             [
-                'name' => 'Trinidad and Tobago',
+                'name' => 'Turks and Caicos Islands',
                 'iso_alpha_2' => 'TC',
                 'iso_alpha_3' => 'TCA',
                 'iso_numeric' => '796',
                 'international_phone' => '1-649',
-            ],
-            [
-                'name' => 'Virgin Islands, US',
-                'iso_alpha_2' => 'VI',
-                'iso_alpha_3' => 'VIR',
-                'iso_numeric' => '850',
-                'international_phone' => '1-340',
             ],
             [
                 'name' => 'Virgin Islands, US',
@@ -402,6 +396,7 @@ class AmericasSeeder extends Seeder
             ],
         ];
 
+        CountryBuilder::create($countries, $this->region, $this->lang);
 
     }
 }
