@@ -19,7 +19,7 @@ class CreateCountriesTable extends Migration
             $table->integer('country_region_id')->unsigned();
             $table->string('iso_alpha_2', 3);
             $table->string('iso_alpha_3', 4);
-            $table->smallInteger('numeric');
+            $table->smallInteger('iso_numeric');
             $table->string('international_phone', 12);
             $table->boolean('visible')->default(true);
             $table->timestamps();
