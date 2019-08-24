@@ -8,7 +8,7 @@ use Lwwcas\LaravelCountries\Models\CountryRegion;
 
 class CountryBuilder
 {
-    public static function create(Array $countries, String $region_slug, String $lang) :Void
+    public static function create(Array $countries, String $region_slug, String $lang): Void
     {
 
 

@@ -33,7 +33,7 @@ class Country extends Model
         'uuid',
         'iso_alpha_2',
         'iso_alpha_3',
-        'numeric',
+        'iso_numeric',
         'international-phone',
         'visible',
         'country_region_id',
