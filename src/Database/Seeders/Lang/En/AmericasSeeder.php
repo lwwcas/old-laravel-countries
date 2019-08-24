@@ -1,11 +1,19 @@
 <?php
 
-namespace Lwwcas\LaravelCountries\Database\Seeders;
+namespace Lwwcas\LaravelCountries\Database\Seeders\Lang\En;
 
 use Illuminate\Database\Seeder;
 
 class AmericasSeeder extends Seeder
 {
+
+    /**
+     * Attribute that defines the continent of countries
+     *
+     * @var string
+     */
+    protected $region = 'america';
+
     /**
      * Run the database seeds.
      *

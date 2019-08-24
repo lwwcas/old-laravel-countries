@@ -6,6 +6,14 @@ use Illuminate\Database\Seeder;
 
 class AfricaSeeder extends Seeder
 {
+
+    /**
+     * Attribute that defines the continent of countries
+     *
+     * @var string
+     */
+    protected $region = 'africa';
+
     /**
      * Run the database seeds.
      *
