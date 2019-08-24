@@ -34,7 +34,7 @@ class Country extends Model
         'iso_alpha_2',
         'iso_alpha_3',
         'iso_numeric',
-        'international-phone',
+        'international_phone',
         'visible',
         'country_region_id',
     ];
