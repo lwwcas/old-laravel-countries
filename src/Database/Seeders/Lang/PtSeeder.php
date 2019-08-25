@@ -23,14 +23,14 @@ class PtSeeder extends Seeder
     public function run()
     {
 
-        // $regions = [
-        //     'africa' => 'África',
-        //     'americas' => 'Américas',
-        //     'asia' => 'Ásia',
-        //     'europe' => 'Europa',
-        //     'oceania' => 'Oceania',
-        // ];
-        // CountryBuilder::createRegion($regions, $this->lang);
+        $regions = [
+            'africa' => 'África',
+            'americas' => 'Américas',
+            'asia' => 'Ásia',
+            'europe' => 'Europa',
+            'oceania' => 'Oceania',
+        ];
+        CountryBuilder::addRegionTranslation($regions, $this->lang);
 
         $countries = [
             "AI" => "Anguilla",

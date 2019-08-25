@@ -23,10 +23,11 @@ class CreateCountriesRegionsTable extends Migration
             $table->increments('id');
             $table->integer('country_region_id')->unsigned();
             $table->string('name');
-            $table->string('slug')->unique();
+            $table->string('slug');
             $table->string('locale')->index();
 
             $table->unique(['country_region_id', 'locale']);
+            $table->unique(['slug', 'locale']);
             $table->foreign('country_region_id')->references('id')->on('countries_regions')->onDelete('cascade');
         });
     }

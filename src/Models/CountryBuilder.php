@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Lwwcas\LaravelCountries\Models\Country;
 use Lwwcas\LaravelCountries\Models\CountryRegion;
+use Lwwcas\LaravelCountries\Models\CountryRegionTranslation;
 use Lwwcas\LaravelCountries\Models\CountryTranslation;
 
 class CountryBuilder
@@ -50,6 +51,33 @@ class CountryBuilder
                 ],
             ]);
         }
+
+        return;
+    }
+
+    public static function addRegionTranslation(Array $regions, String $lang): Void
+    {
+        DB::beginTransaction();
+
+        foreach ($regions as $slug => $region) {
+            $response = CountryRegion::whereTranslation('locale', 'en')
+                                        ->whereTranslation('name', $slug)
+                                        ->first();
+
+            if ($response == null) {
+                DB::rollBack();
+                throw new Exception('Region ' . $region . ' not found');
+            }
+
+            CountryRegionTranslation::create([
+                'country_region_id' => $response->id,
+                'locale' => $lang,
+                'slug' => Str::slug($region, '-'),
+                'name' => Str::title(trim($region)),
+            ]);
+        }
+
+        DB::commit();
 
         return;
     }
