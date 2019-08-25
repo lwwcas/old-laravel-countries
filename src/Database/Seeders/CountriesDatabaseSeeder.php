@@ -5,6 +5,9 @@ namespace Lwwcas\LaravelCountries\Database\Seeders;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 use Lwwcas\LaravelCountries\Database\Seeders\Lang\En\EnSeeder;
+use Lwwcas\LaravelCountries\Database\Seeders\Lang\EsSeeder;
+use Lwwcas\LaravelCountries\Database\Seeders\Lang\FrSeeder;
+use Lwwcas\LaravelCountries\Database\Seeders\Lang\ItSeeder;
 use Lwwcas\LaravelCountries\Database\Seeders\Lang\PtSeeder;
 
 class CountriesDatabaseSeeder extends Seeder
@@ -24,6 +27,9 @@ class CountriesDatabaseSeeder extends Seeder
 
         // Countries by Language
         $this->call(PtSeeder::class);
+        $this->call(EsSeeder::class);
+        $this->call(FrSeeder::class);
+        $this->call(ItSeeder::class);
 
     }
 }
