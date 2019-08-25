@@ -4,6 +4,10 @@ namespace Lwwcas\LaravelCountries\Database\Seeders\Lang\En;
 
 use Illuminate\Database\Seeder;
 use Lwwcas\LaravelCountries\Database\Seeders\Lang\En\AfricaSeeder;
+use Lwwcas\LaravelCountries\Database\Seeders\Lang\En\AmericasSeeder;
+use Lwwcas\LaravelCountries\Database\Seeders\Lang\En\AsiaSeeder;
+use Lwwcas\LaravelCountries\Database\Seeders\Lang\En\EuropeSeeder;
+use Lwwcas\LaravelCountries\Database\Seeders\Lang\En\OceaniaSeeder;
 use Lwwcas\LaravelCountries\Models\CountryBuilder;
 
 class EnSeeder extends Seeder
