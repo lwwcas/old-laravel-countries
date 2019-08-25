@@ -94,13 +94,6 @@ class AsiaSeeder extends Seeder
                 'international_phone' => '86',
             ],
             [
-                'name' => 'Cyprus',
-                'iso_alpha_2' => 'CY',
-                'iso_alpha_3' => 'CYP',
-                'iso_numeric' => '196',
-                'international_phone' => '357',
-            ],
-            [
                 'name' => 'Georgia',
                 'iso_alpha_2' => 'GE',
                 'iso_alpha_3' => 'GEO',
