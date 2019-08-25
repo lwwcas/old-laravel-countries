@@ -261,6 +261,13 @@ class OceaniaSeeder extends Seeder
                 'iso_numeric' => '876',
                 'international_phone' => '681',
             ],
+            [
+                'name' => 'Australia',
+                'iso_alpha_2' => 'AU',
+                'iso_alpha_3' => 'AUS',
+                'iso_numeric' => '36',
+                'international_phone' => '61',
+            ],
         ];
 
         CountryBuilder::create($countries, $this->region, $this->lang);

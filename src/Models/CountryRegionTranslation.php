@@ -26,6 +26,7 @@ class CountryRegionTranslation extends Model
      * @var array
      */
     protected $fillable = [
+        'country_region_id',
         'slug',
         'name',
     ];

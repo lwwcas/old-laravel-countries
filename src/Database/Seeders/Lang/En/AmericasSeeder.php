@@ -332,6 +332,13 @@ class AmericasSeeder extends Seeder
                 'international_phone' => '1-758',
             ],
             [
+                'name' => 'Saint Martin',
+                'iso_alpha_2' => 'MF',
+                'iso_alpha_3' => 'MAF',
+                'iso_numeric' => '663',
+                'international_phone' => '590',
+            ],
+            [
                 'name' => 'Saint Pierre and Miquelon',
                 'iso_alpha_2' => 'PM',
                 'iso_alpha_3' => 'SPM',

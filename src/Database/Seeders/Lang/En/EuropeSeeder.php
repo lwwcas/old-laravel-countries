@@ -319,7 +319,7 @@ class EuropeSeeder extends Seeder
             ],
             [
                 'name' => 'Russia',
-                'iso_alpha_2' => 'EU',
+                'iso_alpha_2' => 'RU',
                 'iso_alpha_3' => 'RUS',
                 'iso_numeric' => '643',
                 'international_phone' => '7',

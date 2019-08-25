@@ -3,9 +3,11 @@
 namespace Lwwcas\LaravelCountries\Models;
 
 use Exception;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Lwwcas\LaravelCountries\Models\Country;
 use Lwwcas\LaravelCountries\Models\CountryRegion;
+use Lwwcas\LaravelCountries\Models\CountryTranslation;
 
 class CountryBuilder
 {
@@ -48,6 +50,34 @@ class CountryBuilder
                 ],
             ]);
         }
+
+        return;
+    }
+
+    public static function addTranslation(Array $countries, String $lang): Void
+    {
+        DB::beginTransaction();
+
+        foreach ($countries as $iso => $country) {
+            $response = Country::where('iso_alpha_2', $iso)
+                                    ->orWhere('iso_alpha_3', $iso)
+                                    ->orWhere('iso_numeric', $iso)
+                                    ->first();
+
+            if ($response == null) {
+                DB::rollBack();
+                throw new Exception('Country ' . $country . ' not found');
+            }
+
+            CountryTranslation::create([
+                'country_id' => $response->id,
+                'locale' => $lang,
+                'slug' => Str::slug($country, '-'),
+                'name' => Str::title(trim($country)),
+            ]);
+        }
+
+        DB::commit();
 
         return;
     }
