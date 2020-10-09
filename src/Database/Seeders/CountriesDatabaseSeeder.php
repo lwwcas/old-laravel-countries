@@ -31,6 +31,7 @@ class CountriesDatabaseSeeder extends Seeder
         $this->call(FrSeeder::class);
         $this->call(ItSeeder::class);
         $this->call(NullSeeder::class);
+        $this->call(EmpySeeder::class);
 
     }
 }
